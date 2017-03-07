@@ -1,1 +1,55 @@
+/*I know a lot of this is wrong, and I'm pretty frustrated with the result, especially since I was told to do it a certain
+way and I feel like if I didn't have to follow certain requirements I'd be able to replicate the image with doing Google
+searches and ignoring Thinkful's position property help. It wasn't enough information for me I feel, to complete the 
+exercise, especially after looking at the solution. It just kind of made me feel incompetent the entire time. Either way, 
+here's my stuff.*/
+nav {
+	padding-left: 60px;
+	padding-right: 60px;
+	border: none;
+	position: relative;
+	/*I know I'm supposed to make this fixed, but the nav bar won't stretch across the page unless I make it relative??*/
+	background-color: gray;
+	text-align: right;
+	height: 50px;
+}
 
+.icon {
+	position: absolute;
+	left: 10px;
+	display: inline-block;
+}
+
+div {
+	position: relative;
+}
+
+main {
+	width: 600px;
+	height: 300px;
+	border: 10px green dotted;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	/*I have no fucking clue how to center vertically*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+}
+
+.spacecat {
+	left: 600px;
+}
+
+.spacedog {
+	right: 600px;
+	bottom: 200px;
+}
+
+body {
+  background: url(../images/outerspace_landscape.jpeg) no-repeat;
+  background-size: cover;
+}
