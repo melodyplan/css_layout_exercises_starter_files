@@ -1,23 +1,30 @@
-/*I know a lot of this is wrong, and I'm pretty frustrated with the result, especially since I was told to do it a certain
-way and I feel like if I didn't have to follow certain requirements I'd be able to replicate the image with doing Google
-searches and ignoring Thinkful's position property help. It wasn't enough information for me I feel, to complete the 
-exercise, especially after looking at the solution. It just kind of made me feel incompetent the entire time. Either way, 
-here's my stuff.*/
 nav {
-	padding-left: 60px;
-	padding-right: 60px;
-	border: none;
-	position: relative;
-	/*I know I'm supposed to make this fixed, but the nav bar won't stretch across the page unless I make it relative??*/
-	background-color: gray;
-	text-align: right;
-	height: 50px;
+ 	padding-left: 60px;
+  	padding-right: 60px;
+  	border: none;
+  	position: fixed;
+  	right: 0;
+  	left: 0;
+  	top: 0;
+  	background-color: gray;
+  	text-align: right;
+  	height: 50px;
 }
 
 .icon {
-	position: absolute;
+	height: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	vertical-align: middle;
 	left: 10px;
+	top: 0;
+	border-radius: 50%;
+	
+}
+
+.nav-list {
 	display: inline-block;
+	list-style: none;
 }
 
 div {
@@ -28,9 +35,10 @@ main {
 	width: 600px;
 	height: 300px;
 	border: 10px green dotted;
+	position: relative;
+	margin-top: 150px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	/*I have no fucking clue how to center vertically*/
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -41,15 +49,18 @@ main {
 }
 
 .spacecat {
-	left: 600px;
+	left: -25px;
+	top: 0;
+	position: absolute;
 }
 
 .spacedog {
-	right: 600px;
-	bottom: 200px;
+	right: 0;
+	bottom: 25px;
+	position: absolute;
 }
 
 body {
-  background: url(../images/outerspace_landscape.jpeg) no-repeat;
-  background-size: cover;
+  	background: url(../images/outerspace_landscape.jpeg) no-repeat;
+  	background-size: cover;
 }
